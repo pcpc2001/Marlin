@@ -476,10 +476,14 @@
 
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
 
+  // Ender 5 - with E3D V6 + 40W
+  #define DEFAULT_Kp 14.97
+  #define DEFAULT_Ki 1.25
+  #define DEFAULT_Kd 44.96
   // Ultimaker
-  #define DEFAULT_Kp 22.2
-  #define DEFAULT_Ki 1.08
-  #define DEFAULT_Kd 114
+  // #define DEFAULT_Kp 22.2
+  // #define DEFAULT_Ki 1.08
+  // #define DEFAULT_Kd 114
 
   // MakerGear
   //#define DEFAULT_Kp 7.0
@@ -526,11 +530,16 @@
   //#define MIN_BED_POWER 0
   //#define PID_BED_DEBUG // Sends debug data to the serial port.
 
+  // [PC]  Ender 5 Bed PID Autotune Result
+#define DEFAULT_bedKp 114.95
+#define DEFAULT_bedKi 22.43
+#define DEFAULT_bedKd 392.77
+
   //120V 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
   //from FOPDT model - kp=.39 Tp=405 Tdead=66, Tc set to 79.2, aggressive factor of .15 (vs .1, 1, 10)
-  #define DEFAULT_bedKp 10.00
-  #define DEFAULT_bedKi .023
-  #define DEFAULT_bedKd 305.4
+  // #define DEFAULT_bedKp 10.00
+  // #define DEFAULT_bedKi .023
+  // #define DEFAULT_bedKd 305.4
 
   //120V 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
   //from pidautotune
@@ -721,8 +730,17 @@
  * [PC] for 1/16 microsteps, use { 80, 80, 1600, 97.8} //Original Ei3 97.0874
  *      for 1/32 microsteps, use { 160, 160, 3200, 195.6}
  * 
+ * Ender 5
  * for 2mm pitch lead screw, use 1600 for 1/16 stepping.
- * for 8mm pitch lead screw, use 400 for 1/16 stepping.
+ * for 8mm pitch lead screw, use 400 for 1/16 stepping. (1600 for 1/64 ustep)
+ * 
+ * X and Y of ender 5:
+ * If INTERPOLATE is set to false.
+ * 1/16 => 80
+ * 1/32 => 160
+ * 1/64 => 320
+ * 1/128 => 640
+ * 1/256 => 1280
  */
 #define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 97.8}
 
@@ -930,7 +948,7 @@
 // X offset: -left  +right  [of the nozzle]
 // Y offset: -front +behind [the nozzle]
 // Z offset: -below +above  [the nozzle]
-#define NOZZLE_TO_PROBE_OFFSET { 27, 0, -3 }
+#define NOZZLE_TO_PROBE_OFFSET { 30, 5, -3 }
 
 // Certain types of probes need to stay away from edges
 #define MIN_PROBE_EDGE 10
@@ -1317,7 +1335,7 @@
 // For DELTA this is the top-center of the Cartesian print volume.
 //#define MANUAL_X_HOME_POS 0
 //#define MANUAL_Y_HOME_POS 0
-//#define MANUAL_Z_HOME_POS 0
+#define MANUAL_Z_HOME_POS -13
 
 // Use "Z Safe Homing" to avoid homing with a Z probe outside the bed area.
 //
