@@ -530,10 +530,10 @@
   //#define MIN_BED_POWER 0
   //#define PID_BED_DEBUG // Sends debug data to the serial port.
 
-  // [PC]  Ender 5 Bed PID Autotune Result
-#define DEFAULT_bedKp 114.95
-#define DEFAULT_bedKi 22.43
-#define DEFAULT_bedKd 392.77
+  // [PC]  Ender 5 Bed PID Autotune Result - with external power block and insulation.
+#define DEFAULT_bedKp 123.74
+#define DEFAULT_bedKi 24.14
+#define DEFAULT_bedKd 422.78
 
   //120V 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
   //from FOPDT model - kp=.39 Tp=405 Tdead=66, Tc set to 79.2, aggressive factor of .15 (vs .1, 1, 10)
