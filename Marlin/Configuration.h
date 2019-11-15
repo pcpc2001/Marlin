@@ -727,6 +727,8 @@
  * Default Axis Steps Per Unit (steps/mm)
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2[, E3[, E4[, E5]]]]]
+ * 
+ * ***********************************************************************************
  * [PC] for 1/16 microsteps, use { 80, 80, 1600, 97.8} //Original Ei3 97.0874
  *      for 1/32 microsteps, use { 160, 160, 3200, 195.6}
  * 
@@ -741,8 +743,12 @@
  * 1/64 => 320
  * 1/128 => 640
  * 1/256 => 1280
+ * 
+ * Bondtech Extruder use 406 for extruder steps per mm
+ * 
+ * *************************************************************************************
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 97.8}
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 406}
 
 /**
  * Default Max Feed Rate (mm/s)
