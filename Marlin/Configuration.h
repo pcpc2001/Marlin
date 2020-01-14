@@ -770,7 +770,8 @@
  * Override with M201
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
-#define DEFAULT_MAX_ACCELERATION      { 500, 500, 100, 5000 }
+#define DEFAULT_MAX_ACCELERATION      { 3000, 3000, 100, 10000 }// [PC] Ender5 Example Setting =>{ 500, 500, 100, 5000 }
+                                                                // [PC] Ei3 Defaults: { 3000, 3000, 100, 10000 }
 
 //#define LIMITED_MAX_ACCEL_EDITING     // Limit edit via M201 or LCD to DEFAULT_MAX_ACCELERATION * 2
 #if ENABLED(LIMITED_MAX_ACCEL_EDITING)
@@ -963,7 +964,7 @@
 // Y offset: -front +behind [the nozzle]
 // Z offset: -below +above  [the nozzle]
 // [PC] For Ender 5, use -1.64.
-#define NOZZLE_TO_PROBE_OFFSET { -23.3, -5, -1.60 }
+#define NOZZLE_TO_PROBE_OFFSET { -23.3, -5, -2.46 }
 
 // Certain types of probes need to stay away from edges
 #define MIN_PROBE_EDGE 15
