@@ -770,7 +770,7 @@
  * Override with M201
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
-#define DEFAULT_MAX_ACCELERATION      { 800, 800, 100, 10000 }// [PC] Ender5 Example Setting =>{ 500, 500, 100, 5000 }
+#define DEFAULT_MAX_ACCELERATION      { 1000, 1000, 100, 10000 }// [PC] Ender5 Example Setting =>{ 500, 500, 100, 5000 }
                                                                 // [PC] Ei3 Defaults: { 3000, 3000, 100, 10000 }
 
 //#define LIMITED_MAX_ACCEL_EDITING     // Limit edit via M201 or LCD to DEFAULT_MAX_ACCELERATION * 2
@@ -964,7 +964,7 @@
 // Y offset: -front +behind [the nozzle]
 // Z offset: -below +above  [the nozzle]
 // [PC] For Ender 5, use -1.64.
-#define NOZZLE_TO_PROBE_OFFSET { -23.3, -5, -2.553 }
+#define NOZZLE_TO_PROBE_OFFSET { -23.3, -5, -2.30 }
 
 // Certain types of probes need to stay away from edges
 #define MIN_PROBE_EDGE 15
@@ -1149,7 +1149,7 @@
 #define FILAMENT_RUNOUT_SENSOR
 #if ENABLED(FILAMENT_RUNOUT_SENSOR)
   #define NUM_RUNOUT_SENSORS   1     // Number of sensors, up to one per extruder. Define a FIL_RUNOUT#_PIN for each.
-  #define FIL_RUNOUT_INVERTING false // Set to true to invert the logic of the sensor.
+  #define FIL_RUNOUT_INVERTING true // Set to true to invert the logic of the sensor. [PC] set to true to invert
   #define FIL_RUNOUT_PULLUP          // Use internal pullup for filament runout pins.
   //#define FIL_RUNOUT_PULLDOWN      // Use internal pulldown for filament runout pins.
 
