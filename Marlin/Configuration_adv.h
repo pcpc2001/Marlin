@@ -1875,6 +1875,7 @@
  * TMCStepper library is required to use TMC stepper drivers.
  * https://github.com/teemuatlut/TMCStepper
  */
+// [PC] ................. Motor Drivers
 #if HAS_TRINAMIC
 
   #define HOLD_MULTIPLIER    0.5  // Scales down the holding current from run current
@@ -1897,7 +1898,7 @@
   #endif
 
   #if AXIS_IS_TMC(Y)
-    #define Y_CURRENT       900
+    #define Y_CURRENT       1050  // [PC] Replace with 1.68A dual axis motor
     #define Y_CURRENT_HOME  Y_CURRENT
     #define Y_MICROSTEPS     16
     #define Y_RSENSE          0.11
