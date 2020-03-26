@@ -994,7 +994,7 @@
 // Y offset: -front +behind [the nozzle]
 // Z offset: -below +above  [the nozzle]
 // [PC] For Ender 5, use -1.64.
-#define NOZZLE_TO_PROBE_OFFSET { -23.3, -5, -2.05 }
+#define NOZZLE_TO_PROBE_OFFSET { -23.3, -5, -2.15 }
 
 // Certain types of probes need to stay away from edges
 #define MIN_PROBE_EDGE 15
@@ -1136,8 +1136,8 @@
 #define Z_HEIGHT 300
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
-#define X_MIN_POS 0
-#define Y_MIN_POS 0
+#define X_MIN_POS -6
+#define Y_MIN_POS -15
 #define Z_MIN_POS 0
 #define X_MAX_POS X_BED_SIZE
 #define Y_MAX_POS Y_BED_SIZE
