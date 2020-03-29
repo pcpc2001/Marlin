@@ -21,6 +21,10 @@
  */
 #pragma once
 
+/*********************************************************
+ * SKR V1.3 - HE3D Ei3
+ *********************************************************/
+
 /**
  * Configuration.h
  *
@@ -738,7 +742,7 @@
  * [PC] for 1/16 microsteps, use { 80, 80, 1600, 97.8} //Original Ei3 97.0874
  *      for 1/32 microsteps, use { 160, 160, 3200, 195.6}
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 1600, 97.8}
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 1600, 413.23}
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -1757,7 +1761,7 @@
 // If you have a speaker that can produce tones, enable it here.
 // By default Marlin assumes you have a buzzer with a fixed frequency.
 //
-//#define SPEAKER
+#define SPEAKER
 
 //
 // The duration and frequency for the UI feedback sound.
