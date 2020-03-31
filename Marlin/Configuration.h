@@ -994,7 +994,7 @@
 // Y offset: -front +behind [the nozzle]
 // Z offset: -below +above  [the nozzle]
 // [PC] For Ender 5, use -1.64.
-#define NOZZLE_TO_PROBE_OFFSET { -23.3, -5, -2.30 }
+#define NOZZLE_TO_PROBE_OFFSET { -23.3, -5, -2.16 }
 
 // Certain types of probes need to stay away from edges
 #define MIN_PROBE_EDGE 15
