@@ -22,7 +22,7 @@
 #pragma once
 
 /*********************************************************
- * SKR V1.3 - Ender 5
+ * SKR V1.3 - Ender 5 Plus
  *********************************************************/
 
 /**
@@ -75,7 +75,7 @@
 // @section info
 
 // Author info of this build printed to the host during boot and M115
-#define STRING_CONFIG_H_AUTHOR "(PC, SKR 1.3 Ender5)" // Who made the changes.
+#define STRING_CONFIG_H_AUTHOR "(PC, SKR 1.3 Ender5+)" // Who made the changes.
 
 /**
  * *** VENDORS PLEASE READ ***
@@ -126,7 +126,7 @@
  *
  * :[2400, 9600, 19200, 38400, 57600, 115200, 250000, 500000, 1000000]
  */
-#define BAUDRATE 115200
+#define BAUDRATE 250000
 
 // Enable the Bluetooth serial interface on AT90USB devices
 //#define BLUETOOTH
@@ -137,7 +137,7 @@
 #endif
 
 // Name displayed in the LCD "Ready" message and Info menu
-#define CUSTOM_MACHINE_NAME "Ender 5 SKR1.3"
+#define CUSTOM_MACHINE_NAME "Ender 5+ SKR1.3"
 
 // Printer's unique ID, used by some programs to differentiate between machines.
 // Choose your own or use a service like http://www.uuidgenerator.net/version4
@@ -993,7 +993,9 @@
 // X offset: -left  +right  [of the nozzle]
 // Y offset: -front +behind [the nozzle]
 // Z offset: -below +above  [the nozzle]
-// [PC] For Ender 5, use -1.64.
+
+// TODO Update Probe Offset values
+// [PC] For Ender 5, u
 #define NOZZLE_TO_PROBE_OFFSET { -23.3, -5, -2.16 }
 
 // Certain types of probes need to stay away from edges
@@ -1129,11 +1131,11 @@
 // @section machine
 
 // The size of the print bed
-#define X_BED_SIZE 220
-#define Y_BED_SIZE 220
+#define X_BED_SIZE 350
+#define Y_BED_SIZE 350
 
 // [PC] Print Height <= I defined this.
-#define Z_HEIGHT 300
+#define Z_HEIGHT 400
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
 #define X_MIN_POS -6
