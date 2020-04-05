@@ -487,10 +487,16 @@
 
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
 
-  // Ender 5 - with E3D V6 + 40W
-  #define DEFAULT_Kp 14.97
-  #define DEFAULT_Ki 1.25
-  #define DEFAULT_Kd 44.96
+  // [PC] Ender 5 - with E3D V6 + 40W
+  // #define DEFAULT_Kp 14.97
+  // #define DEFAULT_Ki 1.25
+  // #define DEFAULT_Kd 44.96
+
+  // [PC] Ender 5 - with NF Crazy High Flow + 50W
+  #define DEFAULT_Kp 13.55
+  #define DEFAULT_Ki 0.73
+  #define DEFAULT_Kd 63.25
+
   // Ultimaker
   // #define DEFAULT_Kp 22.2
   // #define DEFAULT_Ki 1.08
@@ -542,9 +548,14 @@
   //#define PID_BED_DEBUG // Sends debug data to the serial port.
 
   // [PC]  Ender 5 Bed PID Autotune Result - with external power block and insulation.
-#define DEFAULT_bedKp 123.74
-#define DEFAULT_bedKi 24.14
-#define DEFAULT_bedKd 422.78
+  // #define DEFAULT_bedKp 123.74
+  // #define DEFAULT_bedKi 24.14
+  //#define DEFAULT_bedKd 422.78
+
+  // [PC]  Ender 5 Plus Bed PID Autotune Result - Stock bed and with Magnets.
+  #define DEFAULT_bedKp 131.91
+  #define DEFAULT_bedKi 9.71
+  #define DEFAULT_bedKd 1194.95
 
   //120V 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
   //from FOPDT model - kp=.39 Tp=405 Tdead=66, Tc set to 79.2, aggressive factor of .15 (vs .1, 1, 10)
