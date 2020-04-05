@@ -493,9 +493,9 @@
   // #define DEFAULT_Kd 44.96
 
   // [PC] Ender 5 - with NF Crazy High Flow + 50W
-  #define DEFAULT_Kp 13.55
-  #define DEFAULT_Ki 0.73
-  #define DEFAULT_Kd 63.25
+  #define DEFAULT_Kp 14.86
+  #define DEFAULT_Ki 0.76
+  #define DEFAULT_Kd 72.28
 
   // Ultimaker
   // #define DEFAULT_Kp 22.2
