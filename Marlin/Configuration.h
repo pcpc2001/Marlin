@@ -996,7 +996,7 @@
 
 // TODO Update Probe Offset values
 // [PC] For Ender 5, u
-#define NOZZLE_TO_PROBE_OFFSET { -23.3, -5, -2.16 }
+#define NOZZLE_TO_PROBE_OFFSET { -27, -9, -3.9 }
 
 // Certain types of probes need to stay away from edges
 #define MIN_PROBE_EDGE 15
