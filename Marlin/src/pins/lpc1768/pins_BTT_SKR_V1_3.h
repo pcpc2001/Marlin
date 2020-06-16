@@ -89,15 +89,18 @@
 //
 // Z Probe (when not Z_MIN_PIN)
 //
-#ifndef Z_MIN_PROBE_PIN
-  #define Z_MIN_PROBE_PIN                  P1_24
-#endif
+// [PC] Commented this out... this looks weird... 
+//        Z_MIN_PROBE_PIN is not defined in configuration.h because we are using it
+//        for BLTouch... but this overwrites the pin to P1_24?!?
+// #ifndef Z_MIN_PROBE_PIN
+//   #define Z_MIN_PROBE_PIN                  P1_24
+// #endif
 
 //
 // Filament Runout Sensor
 //
 #ifndef FIL_RUNOUT_PIN
-  #define FIL_RUNOUT_PIN                   P1_28
+  #define FIL_RUNOUT_PIN                   P1_24 /// [PC] use Z Max instead of P1_28
 #endif
 
 //
