@@ -89,9 +89,10 @@
 //
 // Z Probe (when not Z_MIN_PIN)
 //
-#ifndef Z_MIN_PROBE_PIN
-  #define Z_MIN_PROBE_PIN                  P1_24
-#endif
+// [PC]  Comment this out to ensure P1_24 would not be assigned to be Z_MIN_PROBE_PIN
+// #ifndef Z_MIN_PROBE_PIN
+//   #define Z_MIN_PROBE_PIN                  P1_24
+// #endif
 
 //
 // Filament Runout Sensor
