@@ -1181,6 +1181,10 @@
  */
 #define FILAMENT_RUNOUT_SENSOR
 #if ENABLED(FILAMENT_RUNOUT_SENSOR)
+
+  // [PC] - Use Z+ Pin 1_24 as routout pin
+  #define FIL_RUNOUT_PIN                   P1_24
+
   #define NUM_RUNOUT_SENSORS   1     // Number of sensors, up to one per extruder. Define a FIL_RUNOUT#_PIN for each.
   #define FIL_RUNOUT_INVERTING true // Set to true to invert the logic of the sensor. [PC] set to true to invert
   #define FIL_RUNOUT_PULLUP          // Use internal pullup for filament runout pins.
